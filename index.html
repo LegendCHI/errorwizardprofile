@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHI | Developer Profile</title>
+  <meta name="description" content="Perfil personal de CHI: programador, desarrollador Discord y creador de proyectos creativos." />
+
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: #12182b;
+      --accent: #6cf2c2;
+      --accent-2: #6aa8ff;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --danger: #ff5f5f;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #12182b, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(108,242,194,0.15), rgba(106,168,255,0.15));
+      border-radius: 20px;
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero span {
+      color: var(--accent);
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+    .tags {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      padding: 6px 12px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 24px;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .card h2 {
+      margin-bottom: 14px;
+      font-size: 1.4rem;
+      color: var(--accent-2);
+    }
+
+    .card p, .card li {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    ul li::before {
+      content: "▹";
+      color: var(--accent);
+      margin-right: 8px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .stat {
+      background: rgba(255,255,255,0.05);
+      padding: 16px;
+      border-radius: 14px;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.6rem;
+      color: var(--accent);
+    }
+
+    footer {
+      max-width: 1100px;
+      margin: 60px auto 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .console {
+      margin-top: 10px;
+      background: #05070f;
+      border-radius: 14px;
+      padding: 16px;
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: #7CFF9E;
+    }
+
+    .console span {
+      color: #6aa8ff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <section class="hero">
+      <h1>CHI <span>// Developer</span></h1>
+      <p>
+        Programador creativo, desarrollador de bots y sistemas para Discord, amante de la tecnología,
+        la automatización y los proyectos con identidad propia. Siempre construyendo cosas nuevas,
+        raras o simplemente épicas.
+      </p>
+      <div class="tags">
+        <div class="tag">Programador</div>
+        <div class="tag">Discord Dev</div>
+        <div class="tag">Frontend</div>
+        <div class="tag">Backend</div>
+        <div class="tag">Creativo</div>
+        <div class="tag">Chile</div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>🧠 Sobre mí</h2>
+      <p>
+        Me gusta aprender haciendo. Desarrollo proyectos personales, bots de Discord,
+        páginas web interactivas y aplicaciones con estilo propio.
+        No solo busco que funcionen, sino que se vean y se sientan bien.
+      </p>
+      <div class="stats">
+        <div class="stat"><strong>+X</strong>Proyectos</div>
+        <div class="stat"><strong>24/7</strong>Modo Dev</div>
+        <div class="stat"><strong>∞</strong>Ideas</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>💻 Tecnologías</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Node.js / npm</li>
+        <li>Bots de Discord (JS)</li>
+        <li>Bases de datos (SQLite / SQL)</li>
+        <li>Git & GitHub</li>
+        <li>APIs y automatización</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>🤖 Discord Developer</h2>
+      <p>
+        Desarrollo bots personalizados para Discord: sistemas de comandos,
+        moderación, economía, embeds, interacciones y lógica avanzada.
+      </p>
+      <div class="console">
+        <span>CHI@discord</span>:~$ npm run start:bot<br />
+        ✔ Bot conectado<br />
+        ✔ Comandos cargados<br />
+        ✔ Servidor estable
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>🚀 Proyectos</h2>
+      <ul>
+        <li>Portafolios interactivos en HTML</li>
+        <li>Aplicaciones tipo diario / notas</li>
+        <li>Bots de Discord multifunción</li>
+        <li>Experimentos visuales y creativos</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>⚡ Filosofía</h2>
+      <p>
+        <em>"Si voy a crear algo, que tenga alma."</em><br /><br />
+        No me conformo con lo básico. Me gusta empujar los límites,
+        aprender de los errores y transformar ideas locas en proyectos reales.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>📡 Contacto</h2>
+      <ul>
+        <li>Discord: <strong>CHI</strong></li>
+        <li>Rol: Developer</li>
+        <li>Disponibilidad: Proyectos / Colaboraciones</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 CHI — Built with code, ideas y desvelo ☕
+  </footer>
+
+</body>
+</html>
