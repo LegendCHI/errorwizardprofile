@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ErrorWizard | Developer Profile</title>
+  <title>CHI | Developer Profile</title>
   <meta name="description" content="Perfil personal de CHI: programador, desarrollador Discord y creador de proyectos creativos." />
 
   <style>
@@ -158,19 +158,76 @@
     .console span {
       color: #6aa8ff;
     }
-  </style>
+      
+    /* GLITCH / ERROR EFFECT */
+    .glitch {
+      position: relative;
+      color: var(--accent);
+      animation: glitch 2s infinite;
+    }
+
+    .glitch::before,
+    .glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      overflow: hidden;
+      color: var(--danger);
+      clip: rect(0, 900px, 0, 0);
+    }
+
+    .glitch::before {
+      animation: glitchTop 2s infinite linear alternate-reverse;
+    }
+
+    .glitch::after {
+      color: var(--accent-2);
+      animation: glitchBottom 1.5s infinite linear alternate-reverse;
+    }
+
+    @keyframes glitch {
+      0% { transform: none; }
+      20% { transform: skew(-0.5deg); }
+      40% { transform: skew(0.5deg); }
+      60% { transform: translate(1px, -1px); }
+      80% { transform: translate(-1px, 1px); }
+      100% { transform: none; }
+    }
+
+    @keyframes glitchTop {
+      0% { clip: rect(0, 9999px, 0, 0); }
+      10% { clip: rect(0, 9999px, 30px, 0); }
+      20% { clip: rect(0, 9999px, 5px, 0); }
+      30% { clip: rect(0, 9999px, 25px, 0); }
+      40% { clip: rect(0, 9999px, 10px, 0); }
+      100% { clip: rect(0, 9999px, 0, 0); }
+    }
+
+    @keyframes glitchBottom {
+      0% { clip: rect(0, 9999px, 0, 0); }
+      10% { clip: rect(35px, 9999px, 65px, 0); }
+      20% { clip: rect(50px, 9999px, 80px, 0); }
+      30% { clip: rect(20px, 9999px, 60px, 0); }
+      40% { clip: rect(45px, 9999px, 75px, 0); }
+      100% { clip: rect(0, 9999px, 0, 0); }
+    }
+
+</style>
 </head>
 <body>
 
   <header>
     <section class="hero">
-      <h1>CHI <span>// Developer</span></h1>
+      <h1 class="glitch" data-text="ERRORWIZARD">ERRORWIZARD <span>// Developer</span></h1>
       <p>
-        Programador creativo, desarrollador de bots y sistemas para Discord, amante de la tecnología,
+        Programador creativo, desarrollador de bots y sistemas para Discord, desarrollador de juegos en Roblox Studio, amante de la tecnología,
         la automatización y los proyectos con identidad propia. Siempre construyendo cosas nuevas,
         raras o simplemente épicas.
       </p>
       <div class="tags">
+        <div class="tag">ErrorWizard</div>
         <div class="tag">Programador</div>
         <div class="tag">Discord Dev</div>
         <div class="tag">Frontend</div>
@@ -202,6 +259,7 @@
         <li>HTML, CSS, JavaScript</li>
         <li>Node.js / npm</li>
         <li>Bots de Discord (JS)</li>
+        <li>Roblox Studio (Lua)</li>
         <li>Bases de datos (SQLite / SQL)</li>
         <li>Git & GitHub</li>
         <li>APIs y automatización</li>
@@ -209,7 +267,7 @@
     </section>
 
     <section class="card">
-      <h2>🤖 Discord Developer</h2>
+      <h2>🤖 Discord Developer // ErrorWizard</h2>
       <p>
         Desarrollo bots personalizados para Discord: sistemas de comandos,
         moderación, economía, embeds, interacciones y lógica avanzada.
@@ -244,7 +302,7 @@
     <section class="card">
       <h2>📡 Contacto</h2>
       <ul>
-        <li>Discord: <strong>CHI</strong></li>
+        <li>Discord: <strong>ErrorWizard</strong></li>
         <li>Rol: Developer</li>
         <li>Disponibilidad: Proyectos / Colaboraciones</li>
       </ul>
